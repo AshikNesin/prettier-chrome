@@ -1,0 +1,31 @@
+{
+  "name": "prettier-chrome",
+  "version": "1.0.0",
+  "description": "Format JavaScript code block with Prettier ",
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AshikNesin/prettier-chrome.git"
+  },
+  "keywords": [
+    "prettier",
+    "javascript",
+    "format"
+  ],
+  "author": "Ashik Nesin <mail@ashiknesin.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AshikNesin/prettier-chrome/issues"
+  },
+  "homepage": "https://github.com/AshikNesin/prettier-chrome#readme",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.4.1"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"name": "Prettier Chrome",
+	"version": "1.0.0",
+	"description": "Format JavaScript code block with Prettier",
+	"homepage_url": "https://github.com/AshikNesin/prettier-chrome",
+	"manifest_version": 2,
+	"minimum_chrome_version": "58",
+	"permissions": [
+		"storage",
+		"clipboardWrite"
+	],
+	"optional_permissions": [
+		"http://*/*",
+		"https://*/*"
+	],
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"run_at": "document_start",
+			"matches": [
+				"https://github.com/*",
+				"https://gist.github.com/*"
+			],
+			"css": [
+				"content.css"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
