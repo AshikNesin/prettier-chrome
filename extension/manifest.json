@@ -30,6 +30,7 @@
 				"content.css"
 			],
 			"js": [
+				"lib/prettier.min.js",
 				"content.js"
 			]
 		}
